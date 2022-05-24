@@ -481,7 +481,7 @@ public class EventHandler extends Handler {
   /** Flushes all eventBuffer entries. */
   @Override
   public synchronized void flush() {
-    logger.debug("EventHandler flushing loger buffer");
+    logger.debug("EventHandler flushing logger buffer");
 
     dumpLogBuffer("");
   }
