@@ -44,7 +44,7 @@ public class IncidentIT extends BaseIncidentTest {
     String requestId = "ri";
     String raiser =
         "net.snowflake.client.core.IncidentIT$"
-            + "CreateIncidentTests.SimpleIncidentCreationTestExpliciit";
+            + "CreateIncidentTests.SimpleIncidentCreationTestExplicit";
     String errorMessage = "error Message";
     String errorStackTrace = "this is a stack element\nthis is another " + "element";
     Incident incident =

@@ -125,7 +125,7 @@ public class ConnectionIT extends BaseJDBCTest {
 
     Properties properties = new Properties();
 
-    properties.put("user", "fakesuer");
+    properties.put("user", "fakeuser");
     properties.put("password", "fakepwd");
     properties.put("account", "fakeaccount");
 
@@ -512,7 +512,7 @@ public class ConnectionIT extends BaseJDBCTest {
 
     Properties properties = new Properties();
 
-    properties.put("user", "fakesuer");
+    properties.put("user", "fakeuser");
     properties.put("password", "fakepwd");
     properties.put("account", "fakeaccount");
     properties.put("insecureMode", true);
@@ -527,7 +527,7 @@ public class ConnectionIT extends BaseJDBCTest {
 
     properties = new Properties();
 
-    properties.put("user", "fakesuer");
+    properties.put("user", "fakeuser");
     properties.put("password", "fakepwd");
     properties.put("account", "fakeaccount");
     try {
@@ -561,7 +561,7 @@ public class ConnectionIT extends BaseJDBCTest {
 
   /** Verify the JVM memory parameters are set in the session */
   @Test
-  public void testClientMemoryJvmParameteres() throws Exception {
+  public void testClientMemoryJvmParameters() throws Exception {
     Properties paramProperties = new Properties();
     paramProperties.put("CLIENT_PREFETCH_THREADS", "6");
     paramProperties.put("CLIENT_RESULT_CHUNK_SIZE", 48);
@@ -603,7 +603,7 @@ public class ConnectionIT extends BaseJDBCTest {
    * parameters take precedence over JVM.
    */
   @Test
-  public void testClientMixedMemoryJvmParameteres() throws Exception {
+  public void testClientMixedMemoryJvmParameters() throws Exception {
     Properties paramProperties = new Properties();
     paramProperties.put("CLIENT_PREFETCH_THREADS", "6");
     paramProperties.put("CLIENT_RESULT_CHUNK_SIZE", 48);

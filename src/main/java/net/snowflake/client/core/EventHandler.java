@@ -176,7 +176,7 @@ public class EventHandler extends Handler {
 
   /** Creates and runs a new QueueFlusher thread */
   synchronized void startFlusher() {
-    // Create a new scheduled executor service with a threadfactory that
+    // Create a new scheduled executor service with a thread factory that
     // creates daemonized threads; this way if the user doesn't exit nicely
     // the JVM Runtime won't hang
     flusher =
@@ -481,7 +481,7 @@ public class EventHandler extends Handler {
   /** Flushes all eventBuffer entries. */
   @Override
   public synchronized void flush() {
-    logger.debug("EventHandler flushing loger buffer");
+    logger.debug("EventHandler flushing logger buffer");
 
     dumpLogBuffer("");
   }

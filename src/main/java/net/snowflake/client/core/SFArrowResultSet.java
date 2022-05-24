@@ -54,7 +54,7 @@ public class SFArrowResultSet extends SFBaseResultSet implements DataConversionC
   /** is array bind supported */
   private final boolean arrayBindSupported;
 
-  /** sesion timezone */
+  /** session timezone */
   private TimeZone timeZone;
 
   /** index of next chunk to consume */
@@ -74,7 +74,7 @@ public class SFArrowResultSet extends SFBaseResultSet implements DataConversionC
 
   /**
    * memory allocator for Arrow. Each SFArrowResultSet contains one rootAllocator. This
-   * rootAllocactor will be cleared and closed when the resultSet is closed
+   * rootAllocator will be cleared and closed when the resultSet is closed
    */
   private RootAllocator rootAllocator;
 
@@ -315,7 +315,7 @@ public class SFArrowResultSet extends SFBaseResultSet implements DataConversionC
   }
 
   /**
-   * Fetch next row of first chunkd in sorted order. If the result set huge, then rest of the chunks
+   * Fetch next row of first chunked in sorted order. If the result set huge, then rest of the chunks
    * are ignored.
    */
   private boolean fetchNextRowSorted() throws SnowflakeSQLException {
