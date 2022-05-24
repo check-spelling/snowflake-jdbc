@@ -1092,7 +1092,7 @@ public class SnowflakeResultSetSerializableV1
   }
 
   /**
-   * Retrieve total row count included in the the ResultSet Serializable object.
+   * Retrieve total row count included in the ResultSet Serializable object.
    *
    * <p>GS sends the data of first chunk and metadata of the other chunk if exist to client, so this
    * function calculates the row count for all of them.
@@ -1112,7 +1112,7 @@ public class SnowflakeResultSetSerializableV1
   }
 
   /**
-   * Retrieve compressed data size in the the ResultSet Serializable object.
+   * Retrieve compressed data size in the ResultSet Serializable object.
    *
    * <p>GS sends the data of first chunk and metadata of the other chunks if exist to client, so
    * this function calculates the data size for all of them. NOTE: if first chunk exists, this
@@ -1137,7 +1137,7 @@ public class SnowflakeResultSetSerializableV1
   }
 
   /**
-   * Retrieve Uncompressed data size in the the ResultSet Serializable object.
+   * Retrieve Uncompressed data size in the ResultSet Serializable object.
    *
    * <p>GS sends the data of first chunk and metadata of the other chunk if exist to client, so this
    * function calculates the data size for all of them.
