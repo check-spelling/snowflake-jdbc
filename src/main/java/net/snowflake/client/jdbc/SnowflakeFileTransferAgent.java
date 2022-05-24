@@ -2355,7 +2355,7 @@ public class SnowflakeFileTransferAgent extends SFBaseFileTransferAgent {
         FileBackedOutputStream fileBackedOutputStream = null;
         InputStream stageFileStream = null;
         try {
-          // calculate digst for stage file
+          // calculate digest for stage file
           stageFileStream = new FileInputStream(stageFilePath);
 
           InputStreamWithMetadata res = computeDigest(stageFileStream, false);
