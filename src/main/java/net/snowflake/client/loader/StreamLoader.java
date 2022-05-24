@@ -651,7 +651,7 @@ public class StreamLoader implements Loader, Runnable {
           LOGGER.debug("Running Execute After SQL");
           _processConn.createStatement().execute(_after);
         }
-        // Loader sucessfully completed. Commit and return.
+        // Loader successfully completed. Commit and return.
         _processConn.createStatement().execute("commit");
         LOGGER.debug("Committed");
       } catch (SQLException ex) {
